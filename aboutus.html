@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>00后</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+<div id="banner">
+    <div id="title">
+        <div id="logo">
+            <img src="image/picture/3knw.png" alt="">
+        </div>
+        <p id="title_text">
+            Crazy to <br> grow up <br> 疯狂想长大
+        </p>
+        <p id="title_text2">
+            <span>00后</span> <br>不轻狂怎能是年少，不放肆怎么称天骄！
+        </p>
+    </div>
+</div>
+<nav>
+    <ul>
+        <li>
+            <a href="index.html">首页</a>
+        </li>
+        <li>
+            <a href="">关于我们</a>
+        </li>
+        <li>
+            <a href="Knowledge.html">不一样的我们</a>
+        </li>
+        <li>
+            <a href="yongpin.html">我们的标签</a>
+        </li>
+        <li>
+            <a href="message.html">在线留言</a>
+        </li>
+        <li>
+            <a href="call.html">话题讨论</a>
+        </li>
+    </ul>
+    <img id="nav_gutou" src="image/picture/gutou.png" alt="">
+    <div id="nav_goutou">
+        <img src="image/picture/3knw.png" alt="">
+    </div>
+</nav>
+<div id="jianjie">
+    <div id="yongpin_box">
+        <img id="yongpin_box_title" src="image/picture/dog2.png" alt="">
+        <p class="zise">About Us</p>
+        <p class="zise">
+            关于我们
+        </p>
+    </div>
+    <h1 style="margin-bottom: 30px;">了不起的00后</h1>
+    <p>
+        70后说80后是垮掉的一代；80后说90后是烂掉的一代；90后说00后是脑残的一代。
+        于是乎，形成了一条鄙视链：70后瞧不上80后；80后瞧不上90后；90后瞧不上00后。
+        尤其是00后，时不时被推向风口浪尖，被贴上叛逆、奢侈、娇气等标签，恨不得一棒子打死所有00后。
+    </p>
+    <p>
+        知乎上有个问题：00后这代人怎么样？
+        点赞最高的答案是：有一天，00后也会离开校园踏入社会。他们也将成为企业家、警察、老师，在各行各业熠熠生辉。
+    </p>
+    <p>
+        我们会证明00后并不逊色任何一代人。
+    </p>
+    <img style="bottom:110px;" id="jianjiedog" src="image/picture/jianjiedog.png" alt="">
+</div>
+<div id="jiansahng">
+    <div id="yongpin_box">
+        <marquee behavior="scroll" direction="" style="border-top:1px solid #ccc;padding-top: 25px;">
+            <img src="image/picture/11.jpg" alt="">
+            <img src="image/picture/23.jpg" alt="">
+            <img src="image/picture/22.jpg" alt="">
+            <img src="image/picture/24.jpg" alt="">
+            <img src="image/picture/11.jpg" alt="">
+            <img src="image/picture/23.jpg" alt="">
+            <img src="image/picture/22.jpg" alt="">
+            <img src="image/picture/24.jpg" alt="">
+        </marquee>
+    </div>
+</div>
+<footer>
+    <div id="footer">
+        <div id="footer_main">
+            <ul>
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="">关于我们</a>
+                </li>
+                <li>
+                    <a href="Knowledge.html">不一样的我们</a>
+                </li>
+                <li>
+                    <a href="yongpin.html">我们的标签</a>
+                </li>
+                <li>
+                    <a href="message.html">在线留言</a>
+                </li>
+                <li>
+                    <a href="call.html">话题讨论</a>
+                </li>
+            </ul>
+
+            <img id="footer_log" src="image/picture/dog3.png" alt="">
+            <img id="phone" src="image/picture/phone.png" alt="">
+            <div id="coutus">
+                <p>交流热线</p>
+                <p>400-0000-0000</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+
+</html>
+<script src="js/jq.js"></script>
+
+<script>
+    $(window).scroll(function () {
+
+        var oT = document.getElementById("jianjie").offsetTop;
+
+        if (oT >= $(window).scrollTop() && oT < ($(window).scrollTop() + $(window).height())) {
+            $("#jianjie").addClass("animated flash");
+
+
+
+        }
+
+        var oT = document.getElementById("jiansahng").offsetTop;
+
+        if (oT >= $(window).scrollTop() && oT < ($(window).scrollTop() + $(window).height())) {
+            $("#phone").addClass("animated swing");
+
+
+
+        }
+
+
+
+    });
+
+</script>

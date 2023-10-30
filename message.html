@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>00后</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+</head>
+<style>
+
+</style>
+
+<body>
+<div id="banner">
+    <div id="title">
+        <div id="logo">
+            <img src="image/picture/3knw.png" alt="">
+        </div>
+        <p id="title_text">
+            Crazy to <br> grow up <br> 疯狂想长大
+        </p>
+        <p id="title_text2">
+            <span>00后</span>  <br> 不轻狂怎能是年少，不放肆怎么称天骄！
+        </p>
+    </div>
+</div>
+<nav>
+    <ul>
+        <li>
+            <a href="index.html">首页</a>
+        </li>
+        <li>
+            <a href="aboutus.html">关于我们</a>
+        </li>
+        <li>
+            <a href="Knowledge.html">不一样的我们</a>
+        </li>
+        <li>
+            <a href="yongpin.html">我们的标签</a>
+        </li>
+        <li>
+            <a href="">在线留言</a>
+        </li>
+        <li>
+            <a href="call.html">话题讨论</a>
+        </li>
+    </ul>
+    <img id="nav_gutou" src="image/picture/gutou.png" alt="">
+    <div id="nav_goutou">
+        <img src="image/picture/3knw.png" alt="">
+    </div>
+</nav>
+<div id="yongpin" style="background: none">
+    <div id="yongpin_box">
+        <img id="yongpin_box_title" src="image/picture/dog2.png" alt="">
+        <p class="zise">Online Message</p>
+        <p class="zise">
+            在线留言
+        </p>
+    </div>
+    <div id="liuyan_main">
+        <div id="liuyan_main_biaoge">
+            <p>姓名</p>
+            <input type="text">
+            <p>手机</p>
+            <input type="text">
+            <p>邮箱</p>
+            <input type="text">
+            <p>内容</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div id="liuyan_tijiao">
+                提交
+            </div>
+            <img src="image/picture/25.jfif" alt="">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div id="footer">
+        <div id="footer_main">
+            <ul>
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">关于我们</a>
+                </li>
+                <li>
+                    <a href="Knowledge.html">不一样的我们</a>
+                </li>
+                <li>
+                    <a href="yongpin.html">我们的标签</a>
+                </li>
+                <li>
+                    <a href="">在线留言</a>
+                </li>
+                <li>
+                    <a href="call.html">话题讨论</a>
+                </li>
+            </ul>
+            <img id="footer_log" src="image/picture/dog3.png" alt="">
+            <img id="phone" src="image/picture/phone.png" alt="">
+            <div id="coutus">
+                <p>交流热线</p>
+                <p>400-0000-0000</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
+<script src="js/jq.js"></script>
+
+<script>
+    $(window).scroll(function () {
+
+        var oT = document.getElementById("jianjie").offsetTop;
+
+        if (oT >= $(window).scrollTop() && oT < ($(window).scrollTop() + $(window).height())) {
+            $("#jianjie").addClass("animated flash");
+            $("#nav_gutou").addClass("animated flash");
+
+
+
+        }
+
+        var oT = document.getElementById("zhishi").offsetTop;
+
+        if (oT >= $(window).scrollTop() && oT < ($(window).scrollTop() + $(window).height())) {
+            $("#zhishi_main_right").addClass("animated swing");
+
+
+
+        }
+        var oT = document.getElementById("jiansahng").offsetTop;
+
+        if (oT >= $(window).scrollTop() && oT < ($(window).scrollTop() + $(window).height())) {
+            $("#phone").addClass("animated swing");
+
+
+
+        }
+
+
+
+    });
+
+
+
+
+
+
+</script>
